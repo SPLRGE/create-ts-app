@@ -1,5 +1,5 @@
 {
-  "name": "create-ts-app",
+  "name": "@splrge/create-ts-app",
   "version": "1.0.0",
   "description": "Create a new typescript project",
   "main": "src/index.js",
