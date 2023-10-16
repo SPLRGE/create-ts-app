@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import fs from 'node:fs'
 import shell from 'shelljs'
 import { consola } from 'consola'
