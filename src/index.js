@@ -34,7 +34,7 @@ async function main() {
       return
     }
     shell.exec(downloadCommand, { silent: true })
-  
+
     shell.exec(`tar -xzf ${name}.tar.gz`, { silent: true })
     shell.mv('typescript-nodejs-template-master', `${name}`)
     shell.rm(`${name}.tar.gz`)
@@ -98,6 +98,8 @@ async function main() {
 
     if (await consola.prompt('Do you want to initialize a git repository?', { type: 'confirm' })) {
         shell.exec('git init', { silent: true })
+        // add all files to git repository
+        shell.exec('git add .', { silent: true })
         consola.info('Git repository initialized successfully!')
     }
 
